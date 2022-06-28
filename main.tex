@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles} % Best loaded last in the preamble
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage[margin=1in]{geometry}
+
+
+\graphicspath{ {images/} }
+
+\title{CG1 Probeklausur}
+\author{Tobias Wylega}
+\date{\today}
+
+\def\code#1{\texttt{#1}}
+\def\points#1{\begin{flushright}#1\end{flushright}}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Einführung in OpenGL}
+\subsection{Rendering Pipelines}
+\subfile{sections/2. Einfuehrung in OpenGL/ffp} \points{1P}
+
+\subsection{Skizze}
+\subfile{sections/2. Einfuehrung in OpenGL/ffpPain} \points{7P}
+
+\subsection{Unterschiede}
+\subfile{sections/2. Einfuehrung in OpenGL/ffpDiff} \points{2P}
+
+
+\section{Geometrie und Zeichnen}
+\subsection{Backface Culling}
+\subfile{sections/3. Geometrie und Zeichnen in OpenGL/backfaceCulling} \points{2P}
+\subsection{Modeling}
+\subfile{sections/3. Geometrie und Zeichnen in OpenGL/modeling} \points{5P}
+\subsection{Triangle Fan}
+\subfile{sections/3. Geometrie und Zeichnen in OpenGL/triangleFan} \points{5P}
+\subsection{Triangle Strip}
+\subfile{sections/3. Geometrie und Zeichnen in OpenGL/triangleStrip} \points{5P}
+
+\section{Koordinatensysteme und Transformationen}
+\subsection{Rotationsmatrizen}
+\subfile{sections/4. Koordinatensysteme und Transformationen/rotation} \points{10P}
+
+\subsection{Zusammenfassen verschiedener Matrizen}
+\subfile{sections/4. Koordinatensysteme und Transformationen/transformation} \points{10P}
+
+\section{Verdeckung}
+\subsection{Z-Buffer-Algorithmus}
+\subfile{sections/5. Verdeckung/zbuffer} \points{10P}
+
+\subsection{Scissor-Test}
+\subfile{sections/5. Verdeckung/scissorTest} \points{3P}
+
+\section{Farbe}
+\subsection{CIE Farbraum}
+\subfile{sections/6. Farbe/cie} \points{2P}
+\subsection{Paprika}
+\subfile{sections/6. Farbe/tomate} \points{4P}
+\subsection{RGB-Farbraum}
+\subfile{sections/6. Farbe/rgb} \points{6P}
+
+\section{Beleuchtung und Schattierung}
+\subsection{Phong}
+\subfile{sections/7. Beleuchtung und Schattierung/unterschiede} \points{2P}
+\subsection{Diffuse Beleuchtung}
+\subfile{sections/7. Beleuchtung und Schattierung/diffuse} \points{7P}
+\subsection{Radiosity}
+\subfile{sections/7. Beleuchtung und Schattierung/radiosity} \points{8P}
+
+\section{Texturen}
+\subsection{Mipmaps}
+\subfile{sections/8. Texturen/mipmap} \points{5P}
+\subsection{Mipmap Level}
+\subfile{sections/8. Texturen/mipmapLevel} \points{2P}
+
+
+\section{Transparenz}
+\subsection{Z-Buffer once again}
+\subfile{sections/9. Transparenz/zbuffer} \points{3P}
+
+\end{document}
